@@ -12,6 +12,31 @@ router.get('/',async(req,res)=>{
     res.json(users);
 });
 
+//router.get('/:id/:parametro') CON PARAMETRO
+router.get('/:id/',async(req,res)=>{
+    const user=await userService.getUserById(req.params.id);
+    if(user){
+        res.json(user);
+    }else{
+        res.status(404).json({message:'User no found'});
+    }
+});
+
+router.post('/',async(req,res)=>{
+    const newUser=await userService.createUser(req.body);
+    res.status(201).json(newUser);
+});
+
+router.put('/:id',async(req,res)=>{
+    const updateUser=await userService.updateUser(req.params.id,req.body);
+    if(updateUser)
+        res.status(201).json(updateUser);
+    else
+    res.status(404).json({message:'User not updated'});
+});
+
+
+
 module.exports=router;
 
 /*router.get('/User',async(req,res)=>{
