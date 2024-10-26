@@ -1,13 +1,12 @@
 const userRepository = require('../repositories/userRepository');
-const UserRepository=require('../repositories/userRepository');
 
 class UserService{
     getAllUsers(){
-        return UserRepository.findAll();
+        return userRepository.findAll();
     }
 
     getUserById(id){
-        return UserRepository.findById(id);
+        return userRepository.findById(id);
     }
 
     createUser(userData){
@@ -15,11 +14,11 @@ class UserService{
     }
 
     updateUser(id, userData){
-        return UserRepository.update(id, userData);
+        return userRepository.update(id, userData);
     }
 
     deleteUser(id){
-        return UserRepository.delete(id);
+        return userRepository.delete(id);
     }
 }
 

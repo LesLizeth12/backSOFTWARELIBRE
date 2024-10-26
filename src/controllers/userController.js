@@ -1,5 +1,5 @@
 const express = require('express');
-const UserService=require('../services/userService');
+const userService=require('../services/userService');
 
 const router=express.Router();
 
@@ -8,7 +8,7 @@ const router=express.Router();
 //router.get('/User/FindAll',)
 
 router.get('/',async(req,res)=>{
-    const users=await UserService.getAllUsers();
+    const users=await userService.getAllUsers();
     res.json(users);
 });
 
