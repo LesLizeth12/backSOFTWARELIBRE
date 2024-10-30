@@ -1,0 +1,81 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "DSSL",
+    "collectionId": "dcfb8cb0-3d65-4721-a9d5-c3bb315bd8dc",
+    "dateExported": "2024-10-30T23:50:06.401Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "67cdbe01-e972-4dde-90ed-f2397280bd83",
+            "colId": "dcfb8cb0-3d65-4721-a9d5-c3bb315bd8dc",
+            "containerId": "",
+            "name": "GETUSUARIOS",
+            "url": "http://localhost:3000/api/users/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-10-26T22:07:58.236Z",
+            "modified": "2024-10-26T22:25:08.708Z",
+            "headers": []
+        },
+        {
+            "_id": "88ad29da-043d-42a1-b36d-3e0395c0e82a",
+            "colId": "dcfb8cb0-3d65-4721-a9d5-c3bb315bd8dc",
+            "containerId": "",
+            "name": "GETUSUARIOSBYID",
+            "url": "http://localhost:3000/api/users/5",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-10-26T22:19:58.165Z",
+            "modified": "2024-10-30T23:49:40.647Z",
+            "headers": []
+        },
+        {
+            "_id": "7f4bd636-a60a-4c11-ba7e-8e58eb74a8b1",
+            "colId": "dcfb8cb0-3d65-4721-a9d5-c3bb315bd8dc",
+            "containerId": "",
+            "name": "CREATEUSER",
+            "url": "http://localhost:3000/api/users/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-10-26T22:51:30.536Z",
+            "modified": "2024-10-26T22:54:28.198Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"rguevara\",\n  \"email\":\"rguevara@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a0da0f46-48f5-446e-b755-0a10e7f560b0",
+            "colId": "dcfb8cb0-3d65-4721-a9d5-c3bb315bd8dc",
+            "containerId": "",
+            "name": "UPDATEUSER",
+            "url": "http://localhost:3000/api/users/3",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-10-26T22:58:40.806Z",
+            "modified": "2024-10-26T23:04:23.979Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"egonzales\",\n  \"email\":\"egonzales@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7f1804b6-4137-4afe-9308-d6dcafc33c82",
+            "colId": "dcfb8cb0-3d65-4721-a9d5-c3bb315bd8dc",
+            "containerId": "",
+            "name": "DELETEUSER",
+            "url": "http://localhost:3000/api/users/4",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-10-30T22:46:07.731Z",
+            "modified": "2024-10-30T23:41:11.262Z",
+            "headers": []
+        }
+    ],
+    "ref": "cZxXh7qDWQrYFM8fznL1LwCJK3CCRbzU_bo3VRz3qfhhGsIdfIYfqs9w9IJua0_O4Mpn6OC7FXrb-VZws2FCWw"
+}

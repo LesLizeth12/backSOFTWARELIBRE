@@ -35,6 +35,15 @@ router.put('/:id',async(req,res)=>{
     res.status(404).json({message:'User not updated'});
 });
 
+router.delete('/:id',async(req,res)=>{
+    const deletedUser=await userService.deleteUser(req.params.id);
+    if(deletedUser){
+        res.status(204).send();
+    }else{
+        res.status(404).json({message:'User dont delete'});
+    }
+});
+
 
 
 module.exports=router;
