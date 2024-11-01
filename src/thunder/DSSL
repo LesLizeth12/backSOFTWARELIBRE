@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "DSSL",
     "collectionId": "dcfb8cb0-3d65-4721-a9d5-c3bb315bd8dc",
-    "dateExported": "2024-10-30T23:50:06.401Z",
+    "dateExported": "2024-11-01T01:46:51.298Z",
     "version": "1.2",
     "folders": [],
     "requests": [
@@ -39,11 +39,11 @@
             "method": "POST",
             "sortNum": 30000,
             "created": "2024-10-26T22:51:30.536Z",
-            "modified": "2024-10-26T22:54:28.198Z",
+            "modified": "2024-11-01T00:21:13.079Z",
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\":\"rguevara\",\n  \"email\":\"rguevara@gmail.com\"\n}",
+                "raw": "{\n  \"name\":\"rguevara\",\n  \"email\":\"rguevara@gmail.com\",\n  \"idRol\": 1\n}",
                 "form": []
             }
         },
@@ -56,11 +56,11 @@
             "method": "PUT",
             "sortNum": 40000,
             "created": "2024-10-26T22:58:40.806Z",
-            "modified": "2024-10-26T23:04:23.979Z",
+            "modified": "2024-11-01T00:21:29.646Z",
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\":\"egonzales\",\n  \"email\":\"egonzales@gmail.com\"\n}",
+                "raw": "{\n  \"name\":\"egonzales\",\n  \"email\":\"egonzales@gmail.com\",\n  \"idRol\": 1\n}",
                 "form": []
             }
         },
@@ -75,7 +75,89 @@
             "created": "2024-10-30T22:46:07.731Z",
             "modified": "2024-10-30T23:41:11.262Z",
             "headers": []
+        },
+        {
+            "_id": "f92e379d-f6fc-48cc-8845-87d4da60d126",
+            "colId": "dcfb8cb0-3d65-4721-a9d5-c3bb315bd8dc",
+            "containerId": "",
+            "name": "GETROLS",
+            "url": "http://localhost:3000/api/rols/",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-11-01T00:46:47.473Z",
+            "modified": "2024-11-01T00:47:47.753Z",
+            "headers": []
+        },
+        {
+            "_id": "ff828ee1-1be9-4d59-bc22-685e0b701aca",
+            "colId": "dcfb8cb0-3d65-4721-a9d5-c3bb315bd8dc",
+            "containerId": "",
+            "name": "GETROLSBYID",
+            "url": "http://localhost:3000/api/rols/1",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-11-01T00:48:18.161Z",
+            "modified": "2024-11-01T00:48:34.775Z",
+            "headers": []
+        },
+        {
+            "_id": "416000c4-eab2-47b6-91e0-29179f85a47b",
+            "colId": "dcfb8cb0-3d65-4721-a9d5-c3bb315bd8dc",
+            "containerId": "",
+            "name": "CREATEROL",
+            "url": "http://localhost:3000/api/rols/",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-11-01T00:48:50.599Z",
+            "modified": "2024-11-01T01:00:49.280Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Gerentee\",\n  \"descripcion\":\"Generall\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "127e26cc-6a95-4cdf-8ddb-9d1e6cd8b568",
+            "colId": "dcfb8cb0-3d65-4721-a9d5-c3bb315bd8dc",
+            "containerId": "",
+            "name": "UPDATEROL",
+            "url": "http://localhost:3000/api/rols/1",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-11-01T00:49:53.049Z",
+            "modified": "2024-11-01T01:01:22.151Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"sdf\",\n  \"descripcion\":\"gdfg\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e3ee6713-b81d-41f7-8b60-34757536f72d",
+            "colId": "dcfb8cb0-3d65-4721-a9d5-c3bb315bd8dc",
+            "containerId": "",
+            "name": "DELETEROL",
+            "url": "http://localhost:3000/api/rols/4",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-11-01T00:52:39.489Z",
+            "modified": "2024-11-01T01:01:37.317Z",
+            "headers": []
+        },
+        {
+            "_id": "60b7e5f3-f9a0-4096-ade0-9f901ffd0e1b",
+            "colId": "dcfb8cb0-3d65-4721-a9d5-c3bb315bd8dc",
+            "containerId": "",
+            "name": "GETUSUARIOBYROL",
+            "url": "http://localhost:3000/api/rols/users/1",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-11-01T01:39:57.813Z",
+            "modified": "2024-11-01T01:40:34.004Z",
+            "headers": []
         }
     ],
-    "ref": "cZxXh7qDWQrYFM8fznL1LwCJK3CCRbzU_bo3VRz3qfhhGsIdfIYfqs9w9IJua0_O4Mpn6OC7FXrb-VZws2FCWw"
+    "ref": "cZxXh7qDWQrYFM8fznL1L95TLaBFmpYEotKAD-XO0h8u2owu7SpsrRRlMOZ9ZZYbewEkXp3aH3N4cA-ue-zpiA"
 }
